@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>login</title>
+		<link rel="stylesheet" type="text/css" href="easyui/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="easyui/blue.css" />
+		<link rel="stylesheet" type="text/css" href="easyui/login.css" />
+		<script src="easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="easyui/icheck.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div style="position: relative;width: 100%;">
+			<h2 style="position: absolute;left: 2vw;font-weight: 200;">芸享风控系统</h2>
+			<div style="float: right;height: 100%;width: 37%;">
+				<div id="input-body" class="animated bounceInDown">
+					<div class="err-text">
+						用户名或密码错误
+					</div>
+					<div class="input-text">
+						<span>账号</span>
+						<span class="line"></span>
+						<input type="text" placeholder="请输入账号" />
+					</div>
+					<div class="input-text">
+						<span>密码</span>
+						<span class="line"></span>
+						<input type="password" placeholder="请输入密码" />
+					</div>
+					<div class="input-text" style="width: 120px;padding-left: 5px;">
+						<input type="text" style="width: 100px;" placeholder="输入验证码" />
+					</div>
+					<img src="easyui/images/yanzheng.jpg" height="38" style="float: right;position: absolute;right: 50px;bottom: 161px;" />
+					<div>
+						<label><input type="checkbox">&nbsp;<span style="vertical-align: middle;color: #333;font-size: 14px;">记住密码</span></label>
+					</div>
+					<div>
+						<button class="loginBtn">登录</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="users-bottom-copy">
+			<font>版权所有：重庆芸享实业有限公司</font>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('input').iCheck({
+				checkboxClass: 'icheckbox_minimal-blue',
+				radioClass: 'iradio_minimal-blue',
+				increaseArea: '20%' // optional
+			});
+			$('.loginBtn').click(function() {
+				$(".loginBtn").addClass('animated pulse');
+				setTimeout(function() {
+					window.location.href = "index.html"
+				}, 800);
+			});
+		});
+	</script>
+
+</html>

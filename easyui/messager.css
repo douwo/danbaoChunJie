@@ -1,0 +1,30 @@
+.messager-window {
+	background: linear-gradient(to bottom, rgb(247, 71, 86) 0, rgb(211, 45, 56) 20%);
+	border-color: red;
+	box-shadow: 0 0 20px 0 #999;
+}
+.window-header>.panel-title {
+	color: #fff;
+}
+.window-header .panel-tool a {
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.window-proxy-mask,
+.window-mask {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.messager-window .l-btn.l-btn-small {
+	background: linear-gradient(to bottom, rgb(248, 103, 115) 0, rgb(211, 45, 56) 70%);
+	color: #eee;
+	outline: none;
+	border: none;
+	transition: box-shadow 0.2s;
+}
+.messager-window .l-btn.l-btn-small:hover {
+	background: linear-gradient(to bottom, rgb(248, 123, 135) 0, rgb(211, 65, 76) 50%);
+	box-shadow: 0 0 3px #955;
+}
+.dialog-button.messager-button {
+	background: rgb(251, 207, 207);
+}
